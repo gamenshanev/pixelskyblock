@@ -32,14 +32,14 @@ module.exports.run = async (bot, message, arguments) => {
 
             var createEmbed = new discord.RichEmbed()
                 .setTitle("Hello, " + message.author.username)
-                .setDescription(`You cna say your quastion in <#${settedParent.id}>`)
+                .setDescription(`You can say your quastion in <#${settedParent.id}>`)
     
             message.channel.send(createEmbed);
 			
 			 var embedParent2 = new discord.RichEmbed()
-            .setTitle("Beste, " + message.author.username.toString())
-            .setDescription(" Hier is uw ticket")
-			.addField("Reden: ", `**Geen onderwerp meegegeven**`);
+            .setTitle("Hello, " + message.author.username.toString())
+            .setDescription(" Here is your ticket")
+			.addField("Reason: ", `**Geen onderwerp meegegeven**`);
 	if(!onderwerp) {
 		settedParent.send(embedParent2);
 		
@@ -48,7 +48,7 @@ module.exports.run = async (bot, message, arguments) => {
             var embedParent = new discord.RichEmbed()
             .setTitle("Hello, " + message.author.username.toString())
             .setDescription(" Here is your ticket")
-			.addField("Reden: ", `**${onderwerp}**`);
+			.addField("Reason: ", `**${onderwerp}**`);
         settedParent.send(embedParent); }
 
 
