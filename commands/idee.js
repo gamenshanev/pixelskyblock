@@ -10,10 +10,10 @@ module.exports.run = async (bot, message, args) => {
  
     // Maak het embed aan.
     var ideeEmbed = new discord.RichEmbed()
-        .setTitle("Nieuw Idee")
+        .setTitle("New Idea")
         .setColor("#00FF00")
-        .addField("Idee: ", idee)
-        .addField("Ingezonden door: ", message.author);
+        .addField("Idea: ", idee)
+        .addField("from: ", message.author);
 
     message.channel.send(message.author + " Je hebt succesvol een idee verstuurd! :white_check_mark:")
  
@@ -32,6 +32,6 @@ module.exports.run = async (bot, message, args) => {
 }
  
 module.exports.help = {
-    name: "idee",
+    name: "idea",
     description: "Heb je een idee. Zet het dan hier en misschien passen we het toe."
 }
