@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     var idee = args.join(" ");
  
     // Kijk na als er een idee is meegegeven.
-    if (!idee) return message.channel.send("Geen Idee meegegeven gelieve een idee mee te geven.");
+    if (!idee) return message.channel.send("Error: you need to type an idea");
  
     // Maak het embed aan.
     var ideeEmbed = new discord.RichEmbed()
@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("Idea: ", idee)
         .addField("from: ", message.author);
 
-    message.channel.send(message.author + " Je hebt succesvol een idee verstuurd! :white_check_mark:")
+    message.channel.send(message.author + " Your idea can you see on the 〖💡〗suggestions channel :white_check_mark:")
  
     // Vind het kanaal.
     var ideeChannel = message.guild.channels.find(`name`, "〖💡〗suggestions");
