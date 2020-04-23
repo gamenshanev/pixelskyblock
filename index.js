@@ -66,7 +66,7 @@ bot.on("ready", async () => {
             .setAuthor(`${member.user.tag}`, member.user.displayAvatarURL)
             .setColor("#FF0000")
             .setTimestamp()
-            .setFooter("Gebruiker Geleaved.");
+            .setFooter("User Leaved.");
      
         channel.send(leaveEmbed);
      
