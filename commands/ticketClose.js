@@ -18,8 +18,8 @@ module.exports.run = async (bot, message, args) => {
 
     var embedCloseTicket = new discord.RichEmbed()
         .setTitle("hallo, STAFF")
-		.setDescription(`Ticket geclosed`)
-        .setFooter("ticket gesloten");
+		.setDescription(`Ticket closed`)
+        .setFooter("ticket closed");
 
     // Vind kanaal voor de logs.
     var logChannel = message.guild.channels.find("name", "〖📝〗logs");
