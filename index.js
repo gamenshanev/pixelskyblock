@@ -38,7 +38,7 @@ bot.on("ready", async () => {
     bot.user.setActivity(`Promotie`, { type: "WATCHING" });
 	
 	    bot.on("guildMemberAdd", member => {
-        var role = member.guild.roles.find("name", "👣 | Member"); 
+        var role = member.guild.roles.find("name", "Gamers"); 
         if (!role) return;
         member.addRole(role);
  
