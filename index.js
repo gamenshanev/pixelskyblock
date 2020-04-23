@@ -35,7 +35,7 @@ bot.on("ready", async () => {
 
     console.log(`${bot.user.username} is nu online en klaar voor gebruik.`);
 
-    bot.user.setActivity(`Promotie`, { type: "WATCHING" });
+    bot.user.setActivity(`PixelSkyblock`, { type: "WATCHING" });
 	
 	    bot.on("guildMemberAdd", member => {
         var role = member.guild.roles.find("name", "Gamers"); 
@@ -47,7 +47,7 @@ bot.on("ready", async () => {
      
         var joinEmbed = new discord.RichEmbed()
             .setAuthor(`${member.user.tag}`, member.user.displayAvatarURL)
-            .setDescription(`Hi ${member.user.username}, Welcome to **PiwelSkyblock** Discord Server.`)
+            .setDescription(`Hi ${member.user.username}, Welcome to **PixelSkyblock** Discord Server.`)
             .setColor("#00FF00")
             .setTimestamp()
             .setFooter("Gebruiker gejoined.");
