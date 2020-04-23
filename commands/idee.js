@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
     message.channel.send(message.author + " Je hebt succesvol een idee verstuurd! :white_check_mark:")
  
     // Vind het kanaal.
-    var ideeChannel = message.guild.channels.find(`name`, "〖💡〗suggesties");
+    var ideeChannel = message.guild.channels.find(`name`, "〖💡〗suggestions");
     if (!ideeChannel) return message.guild.send("Kan het kanaal niet vinden");
  
     // Verzend het bericht en voeg er reacties aan toe.
