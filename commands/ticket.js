@@ -39,7 +39,7 @@ module.exports.run = async (bot, message, arguments) => {
 			 var embedParent2 = new discord.RichEmbed()
             .setTitle("Hello, " + message.author.username.toString())
             .setDescription(" Here is your ticket")
-			.addField("Reason: ", `**Geen onderwerp meegegeven**`);
+			.addField("Reason: ", `**No reason**`);
 	if(!onderwerp) {
 		settedParent.send(embedParent2);
 		
